@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MITS - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-bold text-blue-800">MITS</a>
+      <ul class="hidden md:flex space-x-8 text-gray-700">
+        <li><a href="index.html" class="hover:text-blue-800 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-800 transition font-semibold text-blue-900">About</a></li>
+        <li><a href="contact.html" class="hover:text-blue-800 transition">Contact</a></li>
+      </ul>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col p-4 space-y-4">
+      <li><a href="index.html" class="block hover:text-blue-800 transition">Home</a></li>
+      <li><a href="about.html" class="block hover:text-blue-800 transition font-semibold text-blue-900">About</a></li>
+      <li><a href="contact.html" class="block hover:text-blue-800 transition">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section class="pt-24 max-w-4xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
+    <h1 class="text-4xl font-bold mb-6 text-blue-900 text-center">About Micro Information Technology Services (MITS)</h1>
+
+    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+      Founded in 2023, MITS is a student-focused platform dedicated to connecting ambitious learners with meaningful internship opportunities. We collaborate closely with leading universities to foster career development and real-world experience.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">Our Vision</h2>
+    <p class="mb-6 text-gray-700">
+      To be the premier platform where students, educational institutions, and companies come together to create lasting professional relationships, drive innovation, and empower the workforce of tomorrow.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">Our Mission</h2>
+    <p class="mb-6 text-gray-700">
+      At MITS, our mission is to bridge the gap between students and industry by providing easy access to internship opportunities, facilitating professional growth, and fostering a supportive community of learners and mentors.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-blue-800">Our Values</h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-700">
+      <li><strong>Integrity:</strong> We uphold transparency and honesty in all interactions.</li>
+      <li><strong>Excellence:</strong> We strive to provide high-quality opportunities and services.</li>
+      <li><strong>Inclusivity:</strong> We celebrate diversity and welcome students from all backgrounds.</li>
+      <li><strong>Collaboration:</strong> We believe in working together to create success for all.</li>
+      <li><strong>Innovation:</strong> We embrace new technologies and ideas to improve the internship experience.</li>
+    </ul>
+  </section>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MITS - Micro Information Technology Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+ <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="text-2xl font-bold text-blue-800">MITS</a>
+    <ul class="hidden md:flex space-x-8 text-gray-700">
+      <li><a href="index.html" class="hover:text-blue-800 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-800 transition">About</a></li>
+      <li><a href="contact.html" class="hover:text-blue-800 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col p-4 space-y-4">
+      <li><a href="#" class="block hover:text-blue-800 transition">Home</a></li>
+      <li><a href="#" class="block hover:text-blue-800 transition">About</a></li>
+      <li><a href="#" class="block hover:text-blue-800 transition">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white pt-20">
+    <h1 class="text-5xl sm:text-6xl font-extrabold mb-6 drop-shadow-lg">
+      Welcome to MITS
+    </h1>
+    <p class="text-xl max-w-xl leading-relaxed mb-8 drop-shadow-md">
+      Building connections between students and opportunities across top universities.
+    </p>
+    <a href="apply.html" class="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">
+  Apply Now
+</a>
+
+  </header>
+
+  <!-- Mission Section -->
+  <section class="bg-white py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-900">Our Mission</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        At Micro Information Technology Services (MITS), our mission is to empower students by connecting them with valuable internship opportunities across prestigious universities and companies. 
+        We strive to foster a global community of learners and professionals, enhancing career growth through technology and collaboration.
+      </p>
+    </div>
+  </section>
+
+  <!-- University Logos Section -->
+  <section class="py-12 bg-gray-100 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-blue-900 mb-8">Affiliated Universities</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center">
+        <img src="images/logo1.jpg" alt="University 1 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo2.png" alt="University 2 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo3.png" alt="University 3 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo4.jpg" alt="University 4 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo5.png" alt="University 5 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo6.png" alt="University 6 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo7.png" alt="University 7 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo8.png" alt="University 8 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo9.png" alt="University 9 Logo" class="w-24 h-24 object-contain" />
+        <img src="images/logo10.png" alt="University 10 Logo" class="w-24 h-24 object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Stats Section -->
+  <section class="py-12 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-blue-900">Our Social Media Reach</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div class="bg-blue-100 rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">Instagram Followers</h3>
+          <p class="text-3xl font-extrabold text-blue-900">25K+</p>
+        </div>
+        <div class="bg-blue-100 rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">Twitter Followers</h3>
+          <p class="text-3xl font-extrabold text-blue-900">18K+</p>
+        </div>
+        <div class="bg-blue-100 rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-bold text-blue-700 mb-2">Student Network</h3>
+          <p class="text-3xl font-extrabold text-blue-900">10K+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
