@@ -1,8 +1,6 @@
 # MITS - Micro Information Technology Services Landing Page
 This repository contains the frontend source code for the official landing page of **Micro Information Technology Services (MITS)**.  
 The site introduces MITS, highlights its mission, affiliated universities, and social media reach.
-## 🌐 Live Demo  
-[https://landing-page-design-frontend.netlify.app](https://landing-page-design-frontend.netlify.app)
 ## 🚀 Features
 - Responsive design built with **Tailwind CSS**
 - Mission statement and organizational goals
