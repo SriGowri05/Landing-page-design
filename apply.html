@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apply - MITS Internship</title>
+  <title>MITS - Apply</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
+
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
@@ -34,40 +35,48 @@
     </ul>
   </div>
 
-  <!-- Application Form -->
-  <section class="pt-24 max-w-xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
-    <h1 class="text-3xl font-bold mb-6 text-blue-900 text-center">Internship Application</h1>
+  <!-- Apply Section -->
+  <section class="pt-24 max-w-3xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
+    <h1 class="text-4xl font-bold mb-6 text-blue-900 text-center">Internship Application</h1>
 
-    <!-- ✅ Netlify Form -->
-    <form name="internship" method="POST" data-netlify="true" class="space-y-6">
+    <p class="mb-8 text-center text-gray-700 text-lg">
+      Fill out the form below to apply for our internship program. We’re excited to learn more about you!
+    </p>
+
+    <!-- Netlify Form Starts -->
+    <form name="internship" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thankyou.html" class="space-y-6">
+      <!-- Honeypot field -->
       <input type="hidden" name="form-name" value="internship" />
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
 
       <div>
-        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
-        <input type="text" id="name" name="name" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        <label for="name" class="block mb-2 font-medium">Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
       <div>
-        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
-        <input type="email" id="email" name="email" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        <label for="email" class="block mb-2 font-medium">Email</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
       <div>
-        <label for="university" class="block text-gray-700 font-semibold mb-2">University</label>
-        <input type="text" id="university" name="university" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        <label for="university" class="block mb-2 font-medium">University</label>
+        <input type="text" id="university" name="university" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
       <div>
-        <label for="resume" class="block text-gray-700 font-semibold mb-2">Upload Resume</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
-          class="w-full" />
+        <label for="course" class="block mb-2 font-medium">Course</label>
+        <input type="text" id="course" name="course" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
-      <button type="submit"
-        class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition">
+      <div>
+        <label for="message" class="block mb-2 font-medium">Why do you want this internship?</label>
+        <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded hover:bg-blue-800 transition">
         Submit Application
       </button>
     </form>
