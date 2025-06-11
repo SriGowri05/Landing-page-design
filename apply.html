@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Navbar (you can copy from your index.html for consistency) -->
+  <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="index.html" class="text-2xl font-bold text-blue-800">MITS</a>
@@ -37,27 +37,35 @@
   <!-- Application Form -->
   <section class="pt-24 max-w-xl mx-auto px-6 py-12 bg-white rounded-lg shadow-md">
     <h1 class="text-3xl font-bold mb-6 text-blue-900 text-center">Internship Application</h1>
-    <form action="#" method="POST" class="space-y-6">
+
+    <!-- ✅ Netlify Form -->
+    <form name="internship" method="POST" data-netlify="true" class="space-y-6">
+      <input type="hidden" name="form-name" value="internship" />
+
       <div>
         <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
         <input type="text" id="name" name="name" required
           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
       </div>
+
       <div>
         <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
         <input type="email" id="email" name="email" required
           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
       </div>
+
       <div>
         <label for="university" class="block text-gray-700 font-semibold mb-2">University</label>
         <input type="text" id="university" name="university" required
           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" />
       </div>
+
       <div>
         <label for="resume" class="block text-gray-700 font-semibold mb-2">Upload Resume</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
           class="w-full" />
       </div>
+
       <button type="submit"
         class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition">
         Submit Application
